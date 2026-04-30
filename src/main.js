@@ -2,18 +2,13 @@ import gsap from 'gsap'
 import { BREAKPOINTS } from './utils/breakpoints.js'
 import { initHome } from './pages/home.js'
 import { initContact } from './pages/contact.js'
+import { initProduct } from './pages/product.js'
 import { initGlobal } from './global.js'
-
+import { initNav } from './nav.js'
+/** */
 ;(() => {
-  // =============================================
-  // GSAP SETUP
-  // =============================================
-  // Dev fallback: use npm gsap if CDN isn't present (Webflow preview always provides CDN)
   if (!window.gsap) window.gsap = gsap
 
-  // =============================================
-  // CONFIG
-  // =============================================
   const CONFIG = {
     breakpoints: BREAKPOINTS,
     selectors: {
@@ -21,25 +16,21 @@ import { initGlobal } from './global.js'
     },
   }
 
-  // =============================================
-  // INIT
-  // =============================================
   function init() {
     const page = document.querySelector(CONFIG.selectors.pageWrapper)
     if (!page) return
 
     if (page.classList.contains('is-home')) initHome()
     if (page.classList.contains('is-contact')) initContact()
+    if (page.classList.contains('is-product')) initProduct()
 
+    initNav()
     initGlobal()
   }
 
-  // =============================================
-  // START
-  // =============================================
   try {
     init()
   } catch (error) {
-    console.error('[Main] Failed to initialize:', error)
+    console.log('[Main] Failed to initialize:', error)
   }
 })()
