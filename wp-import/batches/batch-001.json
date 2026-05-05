@@ -1,0 +1,27 @@
+{
+  "batch": 1,
+  "limit": 1,
+  "offset": 0,
+  "count": 1,
+  "items": [
+    {
+      "name": "¿Cómo se reciclan las placas solares?",
+      "slug": "reciclar-placas-solares",
+      "post-body": "<p>Antes de decidir en invertir en placas solares,  una pregunta frecuente es ‘<i>¿cuánto durará mi placa?</i>‘. Bien, la mayoría de placas tienen una vida útil de 20 – 30 años, pero muchas pueden llegar a los 40 años de funcionamiento. Sin embargo, ¿qué pasa con nuestras placas cuándo llegan al fin de su vida?</p>\n\n<h2><b>¿Cómo se reciclan las placas solares?</b></h2>\n\n<p>Uno de los principales componentes de las placas solares es el silicio, motivo por el cual fue necesario regular el futuro de los paneles. Desde el 1 de julio de 2016, está en vigor la directiva europea que obliga a los <b>instaladores a recoger y reciclar gratuitamente los paneles solares usados</b>. Por lo que, las familias no deben pagar ningún gasto por las operaciones de extracción, garantizando así una buena praxis de este tipo de material. </p>\n\n<h2><b>¿Por qué son sostenibles las placas solares?</b></h2>\n\n<p>Cada panel instalado supone aportar 55 kg menos de CO₂. Por lo tanto, una instalación media de 10 paneles aporta 550 kg menos. Se calcula que, en pocos años, todas las <a href=\"https://eltex.es/placas-solares/\">placas solares</a> instaladas en Europa han conseguido que se emitan 6.000 toneladas menos de CO₂. Por estos datos, se considera un sector con un <b>doble impacto positivo en el medio ambiente, </b>ya que por un lado se reducen las emisiones de CO₂, y por el otro las placas se reciclan casi de forma completa.</p>",
+      "excerpt": "Antes de decidir en invertir en placas solares,  una pregunta frecuente es ‘¿cuánto durará mi placa?‘.",
+      "intro": "Antes de decidir en invertir en placas solares,  una pregunta frecuente es ‘¿cuánto durará mi placa?‘. Bien, la mayoría de placas tienen una vida útil de 20 – 30 años, pero muchas pueden llegar a los 40 años de funcionamiento.",
+      "main-image": null,
+      "thumbnail-image": null,
+      "image-alt": "",
+      "category": "69f35cdec84910c0239c1628",
+      "author-2": "69f35cde21929c442dd5e4eb",
+      "published-date": "2021-01-25T16:59:32",
+      "updated-date": "2025-09-04T15:14:20",
+      "seo-title": "¿Cómo se reciclan las placas solares? – Eltex",
+      "seo-description": "Antes de decidir en invertir en placas solares,  una pregunta frecuente es ‘¿cuánto durará mi placa?‘.",
+      "original-wp-url": "https://eltex.es/reciclar-placas-solares/",
+      "reading-time": 1,
+      "featured": false
+    }
+  ]
+}

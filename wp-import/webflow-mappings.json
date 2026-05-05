@@ -1,0 +1,24 @@
+{
+  "siteId": "69837cf69ae0d697fb035912",
+  "collections": {
+    "blogs": "69f0bd6def9ba774986fe8d3",
+    "blogCategories": "69f358be97194270b87b8ab0",
+    "blogAuthors": "69f35a4e1c249cd8eedc1e01",
+    "blogFAQs": "69f35c48e02075ecd87f0d7c"
+  },
+  "categoriesBySlug": {
+    "ahorro": "69f35cdec84910c0239c161a",
+    "ayudas-subvenciones": "69f35cdec84910c0239c161c",
+    "baterias": "69f35cdec84910c0239c161e",
+    "eltex": "69f35cdec84910c0239c1620",
+    "energia-renovable": "69f35cdec84910c0239c1622",
+    "energia-solar": "69f35cdec84910c0239c1624",
+    "normativa": "69f35cdec84910c0239c1626",
+    "placas-solares": "69f35cdec84910c0239c1628",
+    "sin-categorizar": "69f35cdec84910c0239c162a",
+    "sostenibilidad": "69f35cdec84910c0239c162c"
+  },
+  "authorsBySlug": {
+    "equipo-eltex": "69f35cde21929c442dd5e4eb"
+  }
+}

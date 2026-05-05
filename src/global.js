@@ -907,8 +907,54 @@ function initTabSystem() {
   })
 }
 
+function initStickyStepsBasic() {
+  const containers = document.querySelectorAll('[data-sticky-steps-init]')
+  if (!containers.length) return
+
+  containers.forEach((container) => {
+    const items = [...container.querySelectorAll('[data-sticky-steps-item]')]
+    if (!items.length) return
+
+    function updateSteps() {
+      const viewportCenter = window.innerHeight / 2
+
+      let closestIndex = 0
+      let closestDistance = Infinity
+
+      items.forEach((item, index) => {
+        const anchor = item.querySelector('[data-sticky-steps-anchor]')
+        if (!anchor) return
+
+        const rect = anchor.getBoundingClientRect()
+        const anchorCenter = rect.top + rect.height / 2
+        const distance = Math.abs(viewportCenter - anchorCenter)
+
+        if (distance < closestDistance) {
+          closestDistance = distance
+          closestIndex = index
+        }
+      })
+
+      items.forEach((item, index) => {
+        let status = 'active'
+
+        if (index < closestIndex) status = 'before'
+        if (index > closestIndex) status = 'after'
+
+        item.setAttribute('data-sticky-steps-item-status', status)
+      })
+    }
+
+    window.addEventListener('scroll', updateSteps)
+    window.addEventListener('resize', updateSteps)
+
+    requestAnimationFrame(updateSteps)
+  })
+}
+
 export function initGlobal() {
   initFaq()
   formLogic()
   if (document.querySelector('[data-tabs="wrapper"]')) initTabSystem()
+  if (document.querySelector('[data-sticky-steps-init]')) initStickyStepsBasic()
 }

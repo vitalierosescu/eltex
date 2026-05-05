@@ -1,0 +1,27 @@
+{
+  "batch": 3,
+  "limit": 1,
+  "offset": 2,
+  "count": 1,
+  "items": [
+    {
+      "name": "¿Cómo afecta el conflicto entre Rusia y Ucrania a la luz?",
+      "slug": "como-afecta-el-conflicto-entre-rusia-ucrania-a-la-luz",
+      "post-body": "<p>En la madrugada del 24 de febrero de 2022, Rusia ha iniciado la invasión de Ucrania a través de una dura <b>operación militar</b>, que ha consistido en bombardear las ciudades más importantes del país vecino. Hace meses que el mundo entero está atento a los movimientos de los rusos, ya que estos pueden afectar gravemente la estabilidad socioeconómica de muchos países.</p>\n\n<h2><b>El conflicto energético</b></h2>\n\n<p>Uno de los temas más comentados es el <b>encarecimiento de la energía</b>, y no es de extrañar, si se tiene en cuenta que Rusia es el principal exportador de gas entre los países europeos. Con la guerra iniciada, muchos son los que se preguntan si Rusia cortará el suministro, acción que obligará a Europa a buscar fuentes alternativas.</p>\n\n<p>Este paradigma, tarde o temprano, provocará que los precios del gas se encarezcan por la falta de oferta, al menos en Europa, aspecto que influye de forma directa al precio de la luz por el <b>mecanismo de fijación de precios, </b>que correlaciona a todas las energías. El mecanismo consiste en realizar una subasta diaria de energía, donde el gas es el elemento más caro y el que define el precio del kilovatio hora, por lo que si hay un incremento en el precio del gas, la luz, juntamente con las demás energías, también verán sus precios aumentar.</p>\n\n<h2><b>¿España se verá afectada?</b></h2>\n\n<p>España lleva tiempo trabajando para conseguir suficiente suministro de gas ante la amenaza de enfrentamineto armado entre Rusia y Ucrania. Por eso, en los últimos meses, se ha visto muy incrementada la importación de gas desde Estados Unidos vía marítima, con el objetivo de no sufrir un desabastecimiento. </p><p>Sin embargo, desde hace días, los precios del gas, la luz y la gasolina ya han sufrido un aumento. Una subida que seguirá al alza con el reciente estallido, y que deja un panorama de incertidumbre económica y un clima tenso, donde la energía será un frente caliente.</p>",
+      "excerpt": "Con el estadillo del conflicto entre Rusia y Ucrania, la energía es uno de los temas de preocupación por el suministro de gas y la subida de la luz.",
+      "intro": "En la madrugada del 24 de febrero de 2022, Rusia ha iniciado la invasión de Ucrania a través de una dura operación militar, que ha consistido en bombardear las ciudades más importantes del país vecino.",
+      "main-image": null,
+      "thumbnail-image": null,
+      "image-alt": "",
+      "category": "69f35cdec84910c0239c162a",
+      "author-2": "69f35cde21929c442dd5e4eb",
+      "published-date": "2022-02-24T13:11:04",
+      "updated-date": "2023-01-31T09:46:11",
+      "seo-title": "¿Cómo afecta el conflicto entre Rusia y Ucrania a la luz? – Eltex",
+      "seo-description": "Con el conflicto entre Rusia y Ucrania, la energía es uno de los temas de preocupación por el suministro de gas y la subida de la luz.",
+      "original-wp-url": "https://eltex.es/como-afecta-el-conflicto-entre-rusia-ucrania-a-la-luz/",
+      "reading-time": 2,
+      "featured": false
+    }
+  ]
+}
