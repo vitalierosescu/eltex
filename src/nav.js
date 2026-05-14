@@ -2,7 +2,7 @@ function initScrollBehavior() {
   const nav = document.querySelector('.nav_component')
   if (!nav) return
 
-  const offsetY = 20
+  const offsetY = 2
   const scrollThreshold = offsetY + 1000
   let oldScroll = 0
 

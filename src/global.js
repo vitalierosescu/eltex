@@ -498,6 +498,29 @@ const initFaq = () => {
   })
 }
 
+const I18N = {
+  es: {
+    required: 'Campo obligatorio',
+    invalidEmail: 'Email no válido',
+    invalidPhone: 'Número inválido',
+    tooShort: 'Demasiado corto',
+    tooLong: 'Demasiado largo',
+    invalidCountry: 'Código de país inválido',
+  },
+  en: {
+    required: 'Required field',
+    invalidEmail: 'Invalid email',
+    invalidPhone: 'Invalid number',
+    tooShort: 'Too short',
+    tooLong: 'Too long',
+    invalidCountry: 'Invalid country code',
+  },
+}
+const t = (key) => {
+  const lang = (document.documentElement.lang || 'es').slice(0, 2).toLowerCase()
+  return (I18N[lang] || I18N.es)[key]
+}
+
 const formLogic = () => {
   // ===== ORIGIN URL: AUTO-FILL AFTER 1.5s + ON FORM CHANGE =====
   var originInputs = document.querySelectorAll('input[name="originUrl"]')
@@ -579,11 +602,11 @@ const formLogic = () => {
     }
 
     var errorMap = {
-      0: 'Número inválido',
-      1: 'Invalid country code',
-      2: 'Demasiado corto',
-      3: 'Demasiado largo',
-      4: 'Número inválido',
+      0: t('invalidPhone'),
+      1: t('invalidCountry'),
+      2: t('tooShort'),
+      3: t('tooLong'),
+      4: t('invalidPhone'),
     }
 
     var showError = function (msg) {
@@ -599,12 +622,12 @@ const formLogic = () => {
           return true
         } else {
           var errorCode = iti.getValidationError()
-          showError(errorMap[errorCode] || 'Número inválido')
+          showError(errorMap[errorCode] || t('invalidPhone'))
           return false
         }
       }
       if (input.hasAttribute('required')) {
-        showError('Campo obligatorio')
+        showError(t('required'))
       }
       return false
     }
@@ -691,7 +714,7 @@ const formLogic = () => {
 
       var errorEl = document.createElement('div')
       errorEl.className = 'form_field-error-msg'
-      errorEl.textContent = 'Campo obligatorio'
+      errorEl.textContent = t('required')
 
       var wrapper = field.closest('.form_field-wrap')
       if (wrapper) wrapper.appendChild(errorEl)
@@ -773,7 +796,7 @@ const formLogic = () => {
           // Email format check
           if (!isEmpty && field.type === 'email') {
             if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim())) {
-              errorEl.textContent = 'Email no válido'
+              errorEl.textContent = t('invalidEmail')
               errorEl.style.display = 'block'
               field.classList.add('error')
               hasError = true
@@ -783,7 +806,7 @@ const formLogic = () => {
           }
 
           if (isEmpty) {
-            errorEl.textContent = 'Campo obligatorio'
+            errorEl.textContent = t('required')
             errorEl.style.display = 'block'
             field.classList.add('error')
             hasError = true
