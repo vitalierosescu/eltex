@@ -2,29 +2,40 @@ function initScrollBehavior() {
   const nav = document.querySelector('.nav_component')
   if (!nav) return
 
-  const offsetY = 2
-  const scrollThreshold = offsetY + 1000
-  let oldScroll = 0
+  gsap.fromTo(
+    nav,
+    { y: 0 },
+    {
+      y: '-2.75rem',
+      ease: 'none',
+      scrollTrigger: {
+        start: 0,
+        end: 30,
+        scrub: true,
+      },
+    }
+  )
 
-  function update() {
-    const scrollY = window.scrollY
-
-    // Add/remove is-active based on scroll position
-    nav.classList.toggle('is--scrolled', scrollY > offsetY)
-
-    // Add/remove is-scrolled for hide-on-scroll behavior
-    const shouldHide =
-      scrollY > scrollThreshold && scrollY > oldScroll && nav.classList.contains('is--scrolled')
-    nav.classList.toggle('is--scrolled-full', shouldHide)
-
-    oldScroll = scrollY
-  }
-
-  // Initial check
-  update()
-
-  // Listen for scroll
-  window.addEventListener('scroll', update, { passive: true })
+  let hidden = false
+  ScrollTrigger.create({
+    start: 1000,
+    end: 'max',
+    onUpdate: (self) => {
+      const shouldHide = self.direction === 1
+      if (shouldHide === hidden) return
+      hidden = shouldHide
+      gsap.to(nav, {
+        yPercent: shouldHide ? -120 : 0,
+        duration: 0.4,
+        ease: 'power2.out',
+      })
+    },
+    onLeaveBack: () => {
+      if (!hidden) return
+      hidden = false
+      gsap.to(nav, { yPercent: 0, duration: 0.4, ease: 'power2.out' })
+    },
+  })
 }
 
 function animateLogoOnLoad() {
